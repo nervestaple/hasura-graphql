@@ -2,6 +2,7 @@ services:
 - type: web
   name: hasura
   env: docker
+  region: ohio
   autoDeploy: false
   healthCheckPath: /healthz
   envVars:
@@ -20,3 +21,5 @@ services:
 #    generateValue: true
 databases:
 - name: hasura
+  region: ohio
+
